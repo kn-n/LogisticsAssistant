@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="work">Рабочий</string>
+    <string name="rest">Выходной</string>
+    <string name="shift">Смена</string>
+    <string name="work_day">Рабочий день</string>
+    <string name="rest_day">Выходной день</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отменить</string>
+
+    <string-array name="days">
+        <item>Рабочий день</item>
+        <item>Выходной день</item>
+    </string-array>
+</resources>

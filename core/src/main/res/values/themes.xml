@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.LogisticsAssistant" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/white</item>
+        <item name="colorOnPrimaryContainer">@color/dark</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorOnSecondary">@color/dark</item>
+        <item name="colorSecondaryContainer">@color/light_gray_blue</item>
+        <item name="colorOnSecondaryContainer">@color/dark</item>
+        <!-- Surface brand color. -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/dark</item>
+        <item name="colorSurfaceVariant">@color/white</item>
+        <item name="colorOnSurfaceVariant">@color/bia_gray_color_1</item>
+        <item name="colorSurfaceContainer">@color/white</item>
+        <!-- Surface brand color. -->
+        <item name="colorOutline">@color/dark_gray</item>
+        <item name="colorOutlineVariant">@color/gray</item>
+        <!-- Error brand color. -->
+        <item name="colorError">@color/red</item>
+        <item name="colorOnError">@color/white</item>
+        <!-- Container brand color. -->
+        <item name="colorContainer">@color/dark</item>
+        <item name="colorOnContainer">@color/white</item>
+        <!-- Background brand color. -->
+        <item name="android:colorBackground">@color/light_gray_blue</item>
+        <item name="colorOnBackground">@color/dark</item>
+        <!-- Status and Navigation bar color. -->
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

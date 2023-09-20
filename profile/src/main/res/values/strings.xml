@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="service_number">Табельный №</string>
+    <string name="phone">Номер телефона</string>
+    <string name="citizenship">Гражданство</string>
+    <string name="car_type">Машина</string>
+    <string name="car_number">Номера</string>
+    <string name="sick_leave">Больничный лист</string>
+    <string name="notifications">Оповещения</string>
+    <string name="log_out">Выйти</string>
+</resources>

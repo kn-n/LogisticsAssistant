@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/base"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:id="@+id/phone_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/btn_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_1"
+            android:textAppearance="@style/H1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base"
+            android:text="@string/text_2"
+            android:textAppearance="@style/Text_14_B.DG" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_phone"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_l"
+            android:hint="@string/phone_hint"
+            android:includeFontPadding="false"
+            android:textColorHint="@color/middle_gray_blue"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_18"
+            app:boxCornerRadiusBottomStart="@dimen/corner_18"
+            app:boxCornerRadiusTopEnd="@dimen/corner_18"
+            app:boxCornerRadiusTopStart="@dimen/corner_18"
+            app:boxStrokeWidth="2dp"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:digits="0123456789+"
+                android:maxLines="1"
+                android:textAppearance="@style/Input.Phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/code_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/btn_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:insetBottom="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetLeft="0dp"
+                android:padding="0dp"
+                app:icon="@drawable/ic_arrow_left"
+                android:layout_marginEnd="@dimen/base_s"
+                app:iconSize="24dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/text_3"
+                android:textAppearance="@style/H1" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base"
+            android:text="@string/text_2"
+            android:textAppearance="@style/Text_14_B.DG" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_code"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_l"
+            android:includeFontPadding="false"
+            app:boxCornerRadiusBottomEnd="@dimen/corner_18"
+            app:boxCornerRadiusBottomStart="@dimen/corner_18"
+            app:boxCornerRadiusTopEnd="@dimen/corner_18"
+            app:boxCornerRadiusTopStart="@dimen/corner_18"
+            app:boxStrokeWidth="2dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:maxLines="1"
+                android:textAppearance="@style/Input.Number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/new_code"
+            style="@style/Text_14_R.MGB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:enabled="false"
+            android:textColor="@drawable/code_text_selector"
+            android:text="@string/text_5"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continue"
+        style="@style/Button_Filled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btn_continue"
+        app:cornerRadius="@dimen/corner_18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

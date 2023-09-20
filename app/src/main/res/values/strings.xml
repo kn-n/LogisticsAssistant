@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">БИА.Помощник логиста</string>
+
+    <string name="label_tasks">Задания</string>
+    <string name="label_chart">График</string>
+    <string name="label_chat">Чат</string>
+    <string name="label_profile">Профиль</string>
+
+    <string name="label_task_details">Детали задания</string>
+    <string name="label_documents">Документы</string>
+    <string name="label_incident">Инцидент</string>
+    <string name="label_error">Ошибка</string>
+    <string name="label_sick_leave">Больничный</string>
+    <string name="label_new_sick_leave">Новый больничный</string>
+</resources>

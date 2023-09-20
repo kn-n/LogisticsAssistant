@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="base_xxxs">4dp</dimen>
+    <dimen name="base_xxs">8dp</dimen>
+    <dimen name="base_xs">10dp</dimen>
+    <dimen name="base_s">12dp</dimen>
+    <dimen name="base">16dp</dimen>
+    <dimen name="base_m">20dp</dimen>
+    <dimen name="base_l">24dp</dimen>
+
+    <dimen name="corner_20">20dp</dimen>
+    <dimen name="corner_18">18dp</dimen>
+    <dimen name="corner_16">16dp</dimen>
+    <dimen name="corner_12">12dp</dimen>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_1">Добро пожаловать в БИА.Помощник логиста</string>
+    <string name="text_2">Введите свой номер для авторизации</string>
+    <string name="text_3">Введите код из смс</string>
+    <string name="text_4">Код был отправлен на номер телефона </string>
+    <string name="text_5">Выслать повторный код</string>
+    <string name="btn_continue">Продолжить</string>
+    <string name="phone_hint">+7 (999) 000 – 00 – 00</string>
+</resources>

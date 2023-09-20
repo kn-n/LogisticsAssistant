@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true"
+        android:isScrollContainer="true"
+        android:layout_margin="@dimen/base"
+        android:paddingBottom="32dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/corner_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/base"
+                android:orientation="vertical">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_gravity="center_horizontal"
+                    app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+                    android:src="@color/dark"/>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:textAppearance="@style/H2"
+                    android:gravity="center"
+                    tools:text="Петров Иван Алексеевич"/>
+
+                <TextView
+                    android:id="@+id/post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    android:textAppearance="@style/Text_14_B.DG"
+                    android:gravity="center"
+                    tools:text="Водитель"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/details"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_s"
+            app:cardCornerRadius="@dimen/corner_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/base"
+                android:layout_marginVertical="@dimen/base_m"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_number" />
+
+                <TextView
+                    android:id="@+id/serviceNumber"
+                    style="@style/Text_14_B.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="1111" />
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:text="@string/phone" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    style="@style/Text_14_B.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="+7 987 654 3210" />
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:text="@string/citizenship" />
+
+                <TextView
+                    android:id="@+id/citizenship"
+                    style="@style/Text_14_B.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="РФ" />
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:text="@string/car_type" />
+
+                <TextView
+                    android:id="@+id/car_type"
+                    style="@style/Text_14_B.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="Грузовая" />
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:text="@string/car_number" />
+
+                <TextView
+                    android:id="@+id/car_number"
+                    style="@style/Text_14_B.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="А 000 АА 199" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_sick_leave"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/base_s"
+            android:clickable="true"
+            app:cardCornerRadius="@dimen/corner_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/base"
+                android:layout_marginVertical="@dimen/base_xs"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/Text_14_R.D"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/sick_leave" />
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_drop_right"
+                    app:tint="@color/dark" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_notifications"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/base_s"
+            android:clickable="true"
+            app:cardCornerRadius="@dimen/corner_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/base"
+                android:layout_marginVertical="@dimen/base_xs"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/Text_14_R.D"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/notifications" />
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_drop_right"
+                    app:tint="@color/dark" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_log_out"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/base_s"
+            android:clickable="true"
+            app:cardCornerRadius="@dimen/corner_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/base"
+                android:layout_marginVertical="@dimen/base_xs"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/Text_14_R.R"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/log_out" />
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_drop_right"
+                    app:tint="@color/red" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

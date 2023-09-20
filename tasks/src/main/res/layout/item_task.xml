@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/task_card"
+    style="@style/Widget.Material3.CardView.Filled"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/base_xxs"
+    app:cardCornerRadius="@dimen/corner_18">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/base"
+        android:layout_marginVertical="@dimen/base_m"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:textAppearance="@style/Text_14_R.D"
+                tools:text="Мебель" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:visibility="gone"
+                android:textAppearance="@style/Text_12_B.MGB"
+                tools:text="Текущее задание" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_xxxs"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="start|center_vertical"
+                android:textAppearance="@style/Text_14_B.DG"
+                tools:text="11.08.2023" />
+
+            <ImageView
+                android:layout_width="@dimen/base_xxxs"
+                android:layout_height="@dimen/base_xxxs"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/base_xxxs"
+                android:src="@drawable/circle_fill" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="end|center_vertical"
+                android:textAppearance="@style/Text_14_B.DG"
+                tools:text="12:00" />
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_s"
+            android:backgroundTint="@color/light_gray_blue"
+            app:cardCornerRadius="@dimen/corner_12">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/base_xxs"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="6dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/circle_outline" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:background="@color/dark" />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/circle_fill"
+                        android:tintMode="src_over"
+                        app:tint="@color/dark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="6dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/address_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="start|center_vertical"
+                        android:textAppearance="@style/Text_14_B.D"
+                        tools:text="Склад 1, ул. Комсомольская 384" />
+
+                    <TextView
+                        android:id="@+id/address_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/base_xxs"
+                        android:gravity="end|center_vertical"
+                        android:textAppearance="@style/Text_14_B.D"
+                        tools:text="Склад 11, ул. Радищева 145В" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            style="@style/Text_12_B.BGC1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_s"
+            android:text="@string/offer_details" />
+
+        <TextView
+            android:id="@+id/offer_details"
+            style="@style/Text_14_B.D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_xxxs"
+            tools:text="Прописанные детали заказа" />
+
+        <TextView
+            style="@style/Text_12_B.BGC1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_s"
+            android:text="@string/payment_options" />
+
+        <TextView
+            android:id="@+id/payment_options"
+            style="@style/Text_14_B.D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_xxxs"
+            tools:text="Прописанные параметры по оплате" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_details"
+            style="@style/Button_Filled"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/base_s"
+            android:enabled="true"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_details"
+            app:cornerRadius="@dimen/corner_18" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/status_block"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_s"
+            android:backgroundTint="@color/light_gray_blue"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/corner_12">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/base"
+                android:layout_marginVertical="@dimen/base_s"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/status_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:enabled="true"
+                    android:gravity="start|center_vertical"
+                    android:textAppearance="@style/Text_14_R.Status"
+                    tools:text="@string/status_done_title" />
+
+                <TextView
+                    android:id="@+id/status_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    android:gravity="end|center_vertical"
+                    android:textAppearance="@style/Text_14_B.DG"
+                    tools:text="@string/status_done_subtitle" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

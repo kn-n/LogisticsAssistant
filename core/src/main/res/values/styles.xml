@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="H1">
+        <item name="android:fontFamily">@font/stolzl_regular</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:lineHeight">26sp</item>
+    </style>
+
+    <style name="H2">
+        <item name="android:fontFamily">@font/stolzl_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:lineHeight">19sp</item>
+    </style>
+
+    <style name="H2_Bold">
+        <item name="android:fontFamily">@font/stolzl_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:lineHeight">19sp</item>
+    </style>
+
+    <style name="Text_14_B">
+        <item name="android:fontFamily">@font/stolzl_book</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">17sp</item>
+    </style>
+
+    <style name="Text_14_B.D" parent="Text_14_B">
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="Text_14_B.DG" parent="Text_14_B">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="Text_14_B.BGC1" parent="Text_14_B">
+        <item name="android:textColor">@color/bia_gray_color_1</item>
+    </style>
+
+    <style name="Text_14_B.MGB" parent="Text_14_B">
+        <item name="android:textColor">@color/middle_gray_blue</item>
+    </style>
+
+    <style name="Text_14_R">
+        <item name="android:fontFamily">@font/stolzl_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">17sp</item>
+    </style>
+
+    <style name="Text_14_R.D" parent="Text_14_R">
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="Text_14_R.DG" parent="Text_14_R">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="Text_14_R.MGB" parent="Text_14_R">
+        <item name="android:textColor">@color/middle_gray_blue</item>
+    </style>
+
+    <style name="Text_14_R.W" parent="Text_14_R">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_14_R.R" parent="Text_14_R">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="Text_14_R.GS" parent="Text_14_R">
+        <item name="android:textColor">@color/green_status</item>
+    </style>
+
+    <style name="Text_14_R.Status" parent="Text_14_R">
+        <item name="android:textColor">@drawable/status_text_selector</item>
+    </style>
+
+    <style name="Text_12_B">
+        <item name="android:fontFamily">@font/stolzl_book</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineHeight">14sp</item>
+    </style>
+
+    <style name="Text_12_B.MGB" parent="Text_12_B">
+        <item name="android:textColor">@color/middle_gray_blue</item>
+    </style>
+
+    <style name="Text_12_B.BGC1" parent="Text_12_B">
+        <item name="android:textColor">@color/bia_gray_color_1</item>
+    </style>
+
+    <style name="Text_12_R">
+        <item name="android:fontFamily">@font/stolzl_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineHeight">14sp</item>
+    </style>
+
+    <style name="Text_12_R.DG" parent="Text_12_R">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="Text_12_R.R" parent="Text_12_R">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="Text_14_18_R">
+        <item name="android:fontFamily">@font/stolzl_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">18sp</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+    </style>
+
+    <style name="Text_14_18_R.D" parent="Text_14_18_R">
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="Text_14_18_R.MGB" parent="Text_14_18_R">
+        <item name="android:textColor">@color/middle_gray_blue</item>
+    </style>
+
+    <style name="Text_14_18_R.W" parent="Text_14_18_R">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_14_18_R.BL" parent="Text_14_18_R">
+        <item name="android:textColor">@color/blue_link</item>
+    </style>
+
+    <style name="Text_15_R">
+        <item name="android:fontFamily">@font/stolzl_regular</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineHeight">18sp</item>
+    </style>
+
+    <style name="Text_15_R.DG" parent="Text_15_R">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="Text_15_R.MGB" parent="Text_15_R">
+        <item name="android:textColor">@color/middle_gray_blue</item>
+    </style>
+
+    <style name="Text_15_R.W" parent="Text_15_R">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_15_R.R" parent="Text_15_R">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="Input">
+        <item name="android:fontFamily">@font/stolzl_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">24sp</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textColorHint">@color/middle_gray_blue</item>
+        <item name="hintTextColor">@color/middle_gray_blue</item>
+        <item name="android:lineSpacingExtra">7sp</item>
+    </style>
+
+    <style name="Input.Phone" parent="Input">
+        <item name="android:inputType">phone</item>
+    </style>
+
+    <style name="Input.Phone_Hint" parent="Input.Phone">
+        <item name="android:inputType">phone</item>
+        <item name="android:textColor">@color/middle_gray_blue</item>
+    </style>
+
+    <style name="Input.Number" parent="Input">
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:fontFamily">@font/stolzl_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineHeight">16sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="Label.Active" parent="Label">
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="Label.Inactive" parent="Label">
+        <item name="android:textColor">@color/bia_gray_color_1</item>
+    </style>
+
+    <style name="Badge">
+        <item name="android:fontFamily">@font/stolzl_medium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Badge.Big" parent="Badge">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="Badge.Small" parent="Badge">
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineHeight">16sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="R_Headline_Regular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="R_Headline_Regular.D" parent="R_Headline_Regular">
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="R_Headline_Regular.W" parent="R_Headline_Regular">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="R_Caption_3_Regular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:lineHeight">14sp</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:alpha">40</item>
+    </style>
+
+    <style name="R_Caption_3_Regular.D" parent="R_Caption_3_Regular">
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="R_Caption_3_Regular.W" parent="R_Caption_3_Regular">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text_Message">
+        <item name="android:fontFamily">@font/stolzl_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textColorHint">@color/middle_gray_blue</item>
+    </style>
+
+    <style name="Button_Filled" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/Text_14_R</item>
+        <item name="android:textColor">@drawable/button_filled_text_selector</item>
+        <item name="android:backgroundTint">@drawable/button_filled_bg_selector</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Button_Filled_Tone" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/Text_14_R</item>
+        <item name="android:textColor">@drawable/button_filled_tone_text_selector</item>
+        <item name="android:backgroundTint">@drawable/button_filled_tone_bg_selector</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Button_Section" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/Text_14_R.D</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="icon">@drawable/ic_arrow_drop_right</item>
+        <item name="iconTint">@color/dark</item>
+        <item name="iconSize">28dp</item>
+    </style>
+
+    <style name="SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+
+    <style name="Calendar" parent="Widget.Material3.MaterialCalendar">
+        <item name="backgroundTint">@color/white</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Medium</item>
+        <item name="android:textAppearance">@style/Text_15_R</item>
+
+        <item name="materialCalendarMonthNavigationButton">@style/Month_Pagination</item>
+        <item name="materialCalendarYearNavigationButton">@style/Year_Selection</item>
+        <item name="materialCalendarHeaderToggleButton">@style/Switch_To_Keyboard_Input_Icon</item>
+
+        <item name="dayTodayStyle">@style/Day_Today</item>
+        <item name="daySelectedStyle">@style/Day_Selected</item>
+
+        <item name="rangeFillColor">@color/red_shade_1</item>
+
+        <item name="materialCalendarDayOfWeekLabel">@style/Widget.Material3.MaterialCalendar.Day</item>
+    </style>
+
+    <style name="Day_Today" parent="Widget.Material3.MaterialCalendar.Day.Today">
+        <item name="itemStrokeColor">@color/red</item>
+        <item name="itemTextColor">@color/dark_gray</item>
+        <item name="itemStrokeWidth">1dp</item>
+        <item name="shapeAppearance">@style/SmallComponent</item>
+        <item name="android:textAppearance">@style/Text_15_R</item>
+    </style>
+
+    <style name="Day_Selected" parent="Widget.Material3.MaterialCalendar.Day.Selected">
+        <item name="itemFillColor">@color/red</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="shapeAppearance">@style/SmallComponent</item>
+        <item name="android:textAppearance">@style/Text_15_R</item>
+    </style>
+
+    <style name="Month_Pagination" parent="Widget.Material3.MaterialCalendar.MonthNavigationButton">
+        <item name="iconTint">@color/dark</item>
+    </style>
+
+    <style name="Year_Selection" parent="Widget.Material3.MaterialCalendar.YearNavigationButton">
+        <item name="iconTint">@android:color/transparent</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textAppearance">@style/H2</item>
+    </style>
+
+    <style name="Switch_To_Keyboard_Input_Icon" parent="Widget.Material3.MaterialCalendar.HeaderToggleButton">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:tint">@android:color/transparent</item>
+    </style>
+</resources>

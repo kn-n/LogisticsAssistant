@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/details"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/corner_18">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/base"
+                android:layout_marginVertical="@dimen/base_m"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cargo_type" />
+
+                <TextView
+                    android:id="@+id/cargo_type"
+                    style="@style/Text_14_B.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="Мебель" />
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:text="@string/performers_city" />
+
+                <TextView
+                    android:id="@+id/performers_city"
+                    style="@style/Text_14_B.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="Москва" />
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:text="@string/order_date" />
+
+                <TextView
+                    android:id="@+id/order_date"
+                    style="@style/Text_14_B.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="18.04.2023" />
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:text="@string/arrival_time" />
+
+                <TextView
+                    android:id="@+id/arrival_time"
+                    style="@style/Text_14_B.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="12:00" />
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:text="@string/start_point" />
+
+                <TextView
+                    android:id="@+id/start_point"
+                    style="@style/Text_14_18_R.BL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="Склад 51, Ул. Пушкина 124Б" />
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:text="@string/end_point" />
+
+                <TextView
+                    android:id="@+id/end_point"
+                    style="@style/Text_14_18_R.BL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="Склад 38, Ул. Розенбаума 89" />
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:text="@string/body_type" />
+
+                <TextView
+                    android:id="@+id/body_type"
+                    style="@style/Text_14_B.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="Тентованный" />
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:text="@string/offer_details" />
+
+                <TextView
+                    android:id="@+id/offer_details"
+                    style="@style/Text_14_B.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="Прописанные детали заказа" />
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:text="@string/payment_options" />
+
+                <TextView
+                    android:id="@+id/payment_options"
+                    style="@style/Text_14_B.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="Прописанные параметры по оплате" />
+
+                <TextView
+                    style="@style/Text_12_B.BGC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:text="@string/contacts" />
+
+                <TextView
+                    android:id="@+id/contact_phone"
+                    style="@style/Text_14_18_R.BL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="+7 800 896 52 63" />
+
+                <TextView
+                    android:id="@+id/contact_name"
+                    style="@style/Text_14_B.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_xxxs"
+                    tools:text="Иванов Владимир Иосифович" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_s"
+            app:cardCornerRadius="@dimen/corner_18">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/base"
+                android:layout_marginVertical="@dimen/base_m"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Text_14_R.D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clients_rules" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_download"
+                    style="@style/Button_Filled_Tone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/base_s"
+                    android:enabled="true"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="@string/btn_download"
+                    app:cornerRadius="@dimen/corner_18"
+                    app:icon="@drawable/ic_download"
+                    app:iconGravity="textStart"
+                    app:iconSize="18dp"
+                    app:iconTint="@color/dark" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_incident"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/base_s"
+            android:clickable="true"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/corner_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/base"
+                android:layout_marginVertical="@dimen/base_xs"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/badge_incident"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/base_xxs"
+                    android:background="@drawable/circle_fill"
+                    android:backgroundTint="@color/red"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textAppearance="@style/Badge.Small"
+                    android:visibility="gone"
+                    tools:text="1" />
+
+                <TextView
+                    style="@style/Text_14_R.D"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/section_incident" />
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_drop_right"
+                    app:tint="@color/dark" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_error"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/base_s"
+            android:clickable="true"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/corner_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/base"
+                android:layout_marginVertical="@dimen/base_xs"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/badge_error"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/base_xxs"
+                    android:background="@drawable/circle_fill"
+                    android:backgroundTint="@color/red"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textAppearance="@style/Badge.Small"
+                    android:visibility="gone"
+                    tools:text="1" />
+
+                <TextView
+                    style="@style/Text_14_R.D"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/section_error" />
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_drop_right"
+                    app:tint="@color/dark" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_attach_documents"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/base_s"
+            android:clickable="true"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/corner_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/base"
+                android:layout_marginVertical="@dimen/base_xs"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/badge_attach_documents"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/base_xxs"
+                    android:background="@drawable/circle_fill"
+                    android:backgroundTint="@color/red"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textAppearance="@style/Badge.Small"
+                    android:visibility="gone"
+                    tools:text="1" />
+
+                <TextView
+                    style="@style/Text_14_R.D"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/section_attach_documents" />
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_drop_right"
+                    app:tint="@color/dark" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_accept"
+            style="@style/Button_Filled"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/base_s"
+            android:enabled="true"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_accept"
+            app:cornerRadius="@dimen/corner_18" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_decline"
+            style="@style/Button_Filled_Tone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/base_s"
+            android:enabled="true"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_decline"
+            app:cornerRadius="@dimen/corner_18" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_complete_order"
+            style="@style/Button_Filled_Tone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/base_s"
+            android:enabled="false"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_complete_order"
+            android:visibility="gone"
+            app:cornerRadius="@dimen/corner_18" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_refuse_task"
+            style="@style/Button_Filled_Tone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/base_s"
+            android:enabled="true"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_refuse_task"
+            android:visibility="gone"
+            app:cornerRadius="@dimen/corner_18" />
+
+        <TextView
+            style="@style/Text_14_B.MGB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_s"
+            android:text="@string/info_complete"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

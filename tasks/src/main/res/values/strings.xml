@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="offer_details">Детали заказа</string>
+    <string name="payment_options">Параметры по оплате</string>
+    <string name="btn_details">Посмотреть детали</string>
+    <string name="status_done_title">Работа выполнена</string>
+    <string name="status_done_subtitle">Задание было успешно выполнено</string>
+    <string name="status_waiting_title">Ваш ответ принят</string>
+    <string name="status_waiting_subtitle">Вам поступит подтверждение о выполнении задания</string>
+    <string name="status_decline_title">Выполнение задания отклонено</string>
+    <string name="status_decline_subtitle">Вы отклонили задание для выполнения</string>
+    <string name="status_not_relevant_title">Исполнители найдены</string>
+    <string name="status_not_relevant_subtitle">Задание не актуально для выполнения</string>
+    <string name="cargo_type">Тип груза</string>
+    <string name="performers_city">Город исполнения</string>
+    <string name="order_date">Дата заказа</string>
+    <string name="arrival_time">Время прибытия</string>
+    <string name="start_point">Начальная точка маршрута</string>
+    <string name="end_point">Конечная точка маршрута</string>
+    <string name="body_type">Тип кузова</string>
+    <string name="contacts">Контакты</string>
+    <string name="clients_rules">Правила клиента</string>
+    <string name="btn_download">Скачать</string>
+    <string name="btn_accept">Принять</string>
+    <string name="btn_decline">Отказаться</string>
+    <string name="section_incident">Инцидент</string>
+    <string name="section_error">Ошибка</string>
+    <string name="section_attach_documents">Прикрепить документы</string>
+    <string name="btn_complete_order">Завершить заказ</string>
+    <string name="btn_refuse_task">Отказаться от задания</string>
+    <string name="info_complete">Для завершения заказа необходимо прикрепить документы</string>
+    <string name="btn_add_photo">Добавить фото</string>
+    <string name="info_incident">Выберите что произошло</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="reason_1">Проблема на адресе</string>
+    <string name="reason_2">Проблема в пути</string>
+    <string name="reason_3">Проблема на загрузке</string>
+</resources>
