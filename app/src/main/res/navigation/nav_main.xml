@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/tasksFragment">
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="ru.kn_n.tasks.presentation.TasksFragment"
+        android:label="@string/title_tasks" />
+    <fragment
+        android:id="@+id/chartFragment"
+        android:name="ru.kn_n.chart.presentation.ChartFragment"
+        android:label="@string/label_chart" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ru.kn_n.profile.presentation.ProfileFragment"
+        android:label="@string/title_profile" />
+</navigation>

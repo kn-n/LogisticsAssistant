@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -38,11 +39,9 @@ android {
 
 dependencies {
     implementation project(':core')
-    implementation project(':authorization')
     implementation project(':tasks')
     implementation project(':chart')
     implementation project(':profile')
-    implementation project(':navigationImpl')
 
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -52,15 +51,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.6.0'
     implementation 'com.applandeo:material-calendar-view:1.9.0-rc04'
 
-    //retrofit2
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.5.0'
-
-    //coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.5'
 
     //toothpick
     implementation 'com.github.stephanenicolas.toothpick:toothpick-runtime:3.1.0'
@@ -78,6 +70,10 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-runtime:2.5.1'
 
     implementation 'androidx.fragment:fragment-ktx:1.5.5'
+
+    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+    implementation 'com.google.firebase:firebase-database-ktx:20.2.2'
+    implementation 'com.google.firebase:firebase-common-ktx:20.3.3'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

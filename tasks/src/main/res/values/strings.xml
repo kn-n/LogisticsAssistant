@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="title_tasks">Задания</string>
+    <string name="title_details">Детали</string>
+    <string name="title_documents">Документы</string>
+    <string name="title_incident">Инцидент</string>
+
     <string name="offer_details">Детали заказа</string>
     <string name="payment_options">Параметры по оплате</string>
     <string name="btn_details">Посмотреть детали</string>

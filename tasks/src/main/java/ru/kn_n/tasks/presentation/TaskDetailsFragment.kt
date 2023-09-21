@@ -2,26 +2,32 @@ package ru.kn_n.tasks.presentation
 
 import android.os.Bundle
 import android.view.View
+import androidx.lifecycle.ViewModelProvider
 import ru.kn_n.core.base.BaseFragment
-import ru.kn_n.navigationapi.NavigationApi
 import ru.kn_n.tasks.databinding.FragmentTaskDetailsBinding
 import ru.kn_n.tasks.domain.TaskEntity
-import ru.kn_n.tasks.navigation.TaskDetailsDirections
+import ru.kn_n.tasks.presentation.viewModel.TaskDetailsViewModel
 import javax.inject.Inject
 
-class TaskDetailsFragment: BaseFragment<FragmentTaskDetailsBinding>(FragmentTaskDetailsBinding::inflate) {
+class TaskDetailsFragment :
+    BaseFragment<FragmentTaskDetailsBinding>(FragmentTaskDetailsBinding::inflate) {
 
     @Inject
-    lateinit var navigationApi: NavigationApi<TaskDetailsDirections>
+    lateinit var viewModel: TaskDetailsViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setupViewModel()
         setupButtons()
     }
 
-    private fun setupButtons(){
-        with(binding){
+    private fun setupViewModel() {
+        viewModel = ViewModelProvider(this, viewModelFactory)[TaskDetailsViewModel::class.java]
+    }
+
+    private fun setupButtons() {
+        with(binding) {
             btnDownload.setOnClickListener {
 
             }
@@ -32,19 +38,19 @@ class TaskDetailsFragment: BaseFragment<FragmentTaskDetailsBinding>(FragmentTask
 
             }
             btnIncident.setOnClickListener {
-                navigationApi.navigate(TaskDetailsDirections.ToIncident)
+
             }
             btnError.setOnClickListener {
-                navigationApi.navigate(TaskDetailsDirections.ToError)
+
             }
             btnAttachDocuments.setOnClickListener {
-                navigationApi.navigate(TaskDetailsDirections.ToAttachDocuments)
+
             }
         }
     }
 
     private fun showData(profile: TaskEntity) {
-        with(binding){
+        with(binding) {
             cargoType.text = profile.cargoType
             performersCity.text = profile.performersCity
             orderDate.text = profile.date

@@ -40,10 +40,12 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.TaskItemsVi
                 offerDetails.text = data.offerDetails
                 paymentOptions.text = data.paymentOptions
 
-                if (data.status != StatusJob.NONE) {
-                    statusTitle.text = data.status.title
-                    statusSubtitle.text = data.status.subtitle
-                    statusBlock.show()
+                if (StatusJob.valueOf(data.status) != StatusJob.NONE) {
+                    with(StatusJob.valueOf(data.status)) {
+                        statusTitle.text = title
+                        statusSubtitle.text = subtitle
+                        statusBlock.show()
+                    }
                 }
             }
         }

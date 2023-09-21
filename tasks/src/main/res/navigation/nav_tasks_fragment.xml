@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_tasks_fragment"
+    app:startDestination="@id/tasksFragment">
+
+    <fragment
+        android:id="@+id/taskDetailsFragment"
+        android:name="ru.kn_n.tasks.presentation.TaskDetailsFragment"
+        android:label="@string/title_details" >
+        <action
+            android:id="@+id/action_taskDetailsFragment_to_documentsFragment"
+            app:destination="@id/documentsFragment" />
+        <action
+            android:id="@+id/action_taskDetailsFragment_to_incidentFragment"
+            app:destination="@id/incidentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="ru.kn_n.tasks.presentation.TasksFragment"
+        android:label="@string/title_tasks" >
+        <action
+            android:id="@+id/action_tasksFragment_to_taskDetailsFragment"
+            app:destination="@id/taskDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/documentsFragment"
+        android:name="ru.kn_n.tasks.presentation.DocumentsFragment"
+        android:label="@string/title_documents" />
+    <fragment
+        android:id="@+id/incidentFragment"
+        android:name="ru.kn_n.tasks.presentation.IncidentFragment"
+        android:label="@string/info_incident" />
+</navigation>

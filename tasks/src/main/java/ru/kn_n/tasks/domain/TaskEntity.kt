@@ -1,7 +1,5 @@
 package ru.kn_n.tasks.domain
 
-import android.content.res.Resources
-import android.graphics.Color
 import ru.kn_n.core.utils.EMPTY
 import ru.kn_n.core.utils.getStringResource
 import ru.kn_n.tasks.R
@@ -19,7 +17,7 @@ data class TaskEntity(
     val paymentOptions: String = String.EMPTY,
     val contactPhone: String = String.EMPTY,
     val contactName: String = String.EMPTY,
-    val status: StatusJob = StatusJob.NONE,
+    val status: String = StatusJob.NONE.type,
     val rules: String = String.EMPTY,
     val idPerformer: String = String.EMPTY,
     val attachedDocuments: List<String> = emptyList(),
@@ -34,23 +32,23 @@ enum class StatusJob(val type: String, val title: String, val subtitle: String) 
 
     ),
     DONE(
-        "done",
-        getStringResource(R.string.status_done_title),
-        getStringResource(R.string.status_done_subtitle)
+        type = "done",
+        title = "Работа выполнена",
+        subtitle = "Задание было успешно выполнено"
     ),
     WAITING(
-        "waiting",
-        getStringResource(R.string.status_waiting_title),
-        getStringResource(R.string.status_waiting_subtitle)
+        type = "waiting",
+        title = "Ваш ответ принят",
+        subtitle = "Вам поступит подтверждение о выполнении задания"
     ),
     DECLINE(
-        "decline",
-        getStringResource(R.string.status_decline_title),
-        getStringResource(R.string.status_decline_subtitle)
+        type = "decline",
+        title = "Выполнение задания отклонено",
+        subtitle = "Вы отклонили задание для выполнения"
     ),
     NOT_RELEVANT(
-        "notRelevant",
-        getStringResource(R.string.status_not_relevant_title),
-        getStringResource(R.string.status_not_relevant_subtitle)
+        type = "notRelevant",
+        title = "Исполнители найдены",
+        subtitle = "Задание не актуально для выполнения"
     )
 }

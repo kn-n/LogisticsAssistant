@@ -4,13 +4,13 @@ import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import ru.kn_n.core.base.BaseFragment
-import ru.kn_n.tasks.databinding.FragmentTasksBinding
-import ru.kn_n.tasks.presentation.viewModel.TasksViewModel
+import ru.kn_n.tasks.databinding.FragmentIncidentBinding
+import ru.kn_n.tasks.presentation.viewModel.IncidentViewModel
 import javax.inject.Inject
 
-class TasksFragment : BaseFragment<FragmentTasksBinding>(FragmentTasksBinding::inflate) {
+class IncidentFragment : BaseFragment<FragmentIncidentBinding>(FragmentIncidentBinding::inflate) {
     @Inject
-    lateinit var viewModel: TasksViewModel
+    lateinit var viewModel: IncidentViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -19,6 +19,6 @@ class TasksFragment : BaseFragment<FragmentTasksBinding>(FragmentTasksBinding::i
     }
 
     private fun setupViewModel() {
-        viewModel = ViewModelProvider(this, viewModelFactory)[TasksViewModel::class.java]
+        viewModel = ViewModelProvider(this, viewModelFactory)[IncidentViewModel::class.java]
     }
 }

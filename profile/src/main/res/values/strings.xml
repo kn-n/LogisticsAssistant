@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="title_profile">Профиль</string>
+
     <string name="service_number">Табельный №</string>
     <string name="phone">Номер телефона</string>
     <string name="citizenship">Гражданство</string>

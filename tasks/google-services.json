@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "218149582067",
+    "firebase_url": "https://logistic-assistent-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "logistic-assistent",
+    "storage_bucket": "logistic-assistent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218149582067:android:389a8ff8a3fe18356c3386",
+        "android_client_info": {
+          "package_name": "ru.kn_n.logisticsassistant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpHK2ufDQ8wDwsqeseVwQauxpecrGdL2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

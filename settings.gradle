@@ -15,9 +15,6 @@ dependencyResolutionManagement {
 rootProject.name = "Logistics Assistant"
 include ':app'
 include ':core'
-include ':authorization'
 include ':tasks'
 include ':chart'
 include ':profile'
-include ':navigationAPI'
-include ':navigationImpl'
