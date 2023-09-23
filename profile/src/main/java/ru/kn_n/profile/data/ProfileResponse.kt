@@ -1,22 +1,24 @@
 package ru.kn_n.profile.data
 
+import ru.kn_n.core.utils.EMPTY
+
 class ProfileResponse(
-    val id: String?,
-    val imgUrl: String?,
-    val name: String?,
-    val post: String?,
-    val serviceNumber: String?,
-    val phone: String?,
-    val citizenship: String?,
-    val carType: String?,
-    val carNumber: String?,
-    val sickLeaves: List<SickLeaveResponse>?,
-    val currentTaskId: String?
+    val id: String? = String.EMPTY,
+    val imgUrl: String? = String.EMPTY,
+    val name: String? = String.EMPTY,
+    val post: String? = String.EMPTY,
+    val serviceNumber: String? = String.EMPTY,
+    val phone: String? = String.EMPTY,
+    val citizenship: String? = String.EMPTY,
+    val carType: String? = String.EMPTY,
+    val carNumber: String? = String.EMPTY,
+    val sickLeaves: List<SickLeaveResponse>? = emptyList(),
+    val currentTaskId: String? = String.EMPTY
 )
 
 class SickLeaveResponse(
-    val id: String?,
-    val sickLeaveStatus: String?,
-    val startDate: String?,
-    val endDate: String?
+    val id: String? = String.EMPTY,
+    val sickLeaveStatus: String? = String.EMPTY,
+    val startDate: String? = String.EMPTY,
+    val endDate: String? = String.EMPTY
 )

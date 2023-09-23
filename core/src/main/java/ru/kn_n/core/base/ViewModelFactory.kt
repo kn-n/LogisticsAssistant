@@ -1,6 +1,5 @@
 package ru.kn_n.core.base
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import toothpick.Toothpick
@@ -21,10 +20,10 @@ class ViewModelFactory @Inject constructor() :
                 Toothpick.openScopes(Scopes.APP_SCOPE, Scopes.TASKS_SCOPE)
                     .getInstance(modelClass) as T
             "DocumentsViewModel" ->
-                Toothpick.openScopes(Scopes.APP_SCOPE, Scopes.CHART_SCOPE)
+                Toothpick.openScopes(Scopes.APP_SCOPE, Scopes.TASKS_SCOPE)
                     .getInstance(modelClass) as T
             "IncidentViewModel" ->
-                Toothpick.openScopes(Scopes.APP_SCOPE, Scopes.CHART_SCOPE)
+                Toothpick.openScopes(Scopes.APP_SCOPE, Scopes.TASKS_SCOPE  )
                     .getInstance(modelClass) as T
             "ChartViewModel" ->
                 Toothpick.openScopes(Scopes.APP_SCOPE, Scopes.CHART_SCOPE)

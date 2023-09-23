@@ -1,12 +1,15 @@
 package ru.kn_n.profile.data
 
+import com.google.firebase.database.DataSnapshot
 import ru.kn_n.profile.domain.ProfileEntity
 import ru.kn_n.profile.domain.SickLeave
 import ru.kn_n.profile.domain.SickLeaveStatus
+import javax.inject.Inject
 
-class ProfileResponseToEntityMapper {
-    fun mapProfileResponse(response: ProfileResponse?) =
-        if (response == null) {
+class ProfileResponseToEntityMapper @Inject constructor() {
+    fun mapProfileResponse(data: DataSnapshot?): ProfileEntity {
+        val response = data?.getValue(ProfileResponse::class.java)
+        return if (response == null) {
             ProfileEntity()
         } else {
             with(response) {
@@ -25,6 +28,7 @@ class ProfileResponseToEntityMapper {
                 )
             }
         }
+    }
 
     private fun mapSickLeaveResponseToEntity(response: SickLeaveResponse) =
         with(response) {

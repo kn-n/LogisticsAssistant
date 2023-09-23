@@ -1,8 +1,6 @@
 package ru.kn_n.tasks.domain
 
 import ru.kn_n.core.utils.EMPTY
-import ru.kn_n.core.utils.getStringResource
-import ru.kn_n.tasks.R
 
 data class TaskEntity(
     val id: String = String.EMPTY,
@@ -17,9 +15,9 @@ data class TaskEntity(
     val paymentOptions: String = String.EMPTY,
     val contactPhone: String = String.EMPTY,
     val contactName: String = String.EMPTY,
-    val status: String = StatusJob.NONE.type,
+    var status: StatusJob = StatusJob.NONE,
     val rules: String = String.EMPTY,
-    val idPerformer: String = String.EMPTY,
+    var idPerformer: String = String.EMPTY,
     val attachedDocuments: List<String> = emptyList(),
     val incidents: List<String> = emptyList(),
     val errors: List<String> = emptyList()
@@ -29,7 +27,6 @@ enum class StatusJob(val type: String, val title: String, val subtitle: String) 
         "none",
         String.EMPTY,
         String.EMPTY,
-
     ),
     DONE(
         type = "done",

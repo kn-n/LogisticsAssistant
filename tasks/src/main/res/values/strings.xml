@@ -40,4 +40,5 @@
     <string name="reason_1">Проблема на адресе</string>
     <string name="reason_2">Проблема в пути</string>
     <string name="reason_3">Проблема на загрузке</string>
+    <string name="current_task">Текущее задание</string>
 </resources>

@@ -2,7 +2,9 @@ package ru.kn_n.profile.presentation
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import ru.kn_n.core.base.BaseFragment
 import ru.kn_n.core.utils.loadImage
 import ru.kn_n.profile.databinding.FragmentProfileBinding
@@ -18,6 +20,7 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBind
         super.onViewCreated(view, savedInstanceState)
 
         setupViewModel()
+        getData()
         setupButtons()
     }
 
@@ -31,7 +34,8 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBind
 
             }
             btnLogOut.setOnClickListener {
-
+                viewModel.logOut()
+                findNavController().navigateUp()
             }
             btnNotifications.setOnClickListener {
 
@@ -39,7 +43,15 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBind
         }
     }
 
+    private fun getData() {
+        viewModel.getProfile()
+        viewModel.resultProfile.observe(viewLifecycleOwner){
+            showData(it)
+        }
+    }
+
     private fun showData(profile: ProfileEntity) {
+        Toast.makeText(requireContext(), profile.phone, Toast.LENGTH_SHORT).show()
         with(binding) {
             loadImage(profileImage, profile.imgUrl, profileImage)
             name.text = profile.name

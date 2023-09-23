@@ -16,6 +16,7 @@ import ru.kn_n.core.utils.gone
 import ru.kn_n.profile.domain.ProfileEntity
 import ru.kn_n.profile.domain.SickLeave
 import ru.kn_n.profile.domain.SickLeaveStatus
+import ru.kn_n.tasks.data.TaskResponse
 import ru.kn_n.tasks.domain.StatusJob
 import ru.kn_n.tasks.domain.TaskEntity
 import toothpick.Toothpick
@@ -68,16 +69,10 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setLogo(ru.kn_n.core.R.drawable.logo_short)
         supportActionBar?.title= String.EMPTY
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration)
-        binding.bottomNavigation.gone()
     }
 
     override fun onSupportNavigateUp(): Boolean {
         return NavigationUI.navigateUp(navController, null)
     }
 
-
-    companion object {
-        private const val NODE_USER = "Users"
-        private const val NODE_TASKS = "Tasks"
-    }
 }

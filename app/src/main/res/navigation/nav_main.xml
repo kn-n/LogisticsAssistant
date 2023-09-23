@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_main"
-    app:startDestination="@id/tasksFragment">
+    app:startDestination="@id/nav_tasks_fragment">
 
     <fragment
         android:id="@+id/tasksFragment"
@@ -16,4 +16,5 @@
         android:id="@+id/profileFragment"
         android:name="ru.kn_n.profile.presentation.ProfileFragment"
         android:label="@string/title_profile" />
+    <include app:graph="@navigation/nav_tasks_fragment" />
 </navigation>

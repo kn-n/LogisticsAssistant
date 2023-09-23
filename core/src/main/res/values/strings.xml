@@ -22,4 +22,9 @@
         <item>Ноябрь</item>
         <item>Декабрь</item>
     </array>
+
+    <string name="btn_dialog_cancel">Закрыть</string>
+    <string name="info_title">Ой, что-то пошло не так …</string>
+    <string name="info_message">Произошли технические шоколадки(\nПопробуйте позже</string>
+
 </resources>

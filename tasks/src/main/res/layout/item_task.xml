@@ -40,7 +40,7 @@
                 android:gravity="end|center_vertical"
                 android:visibility="gone"
                 android:textAppearance="@style/Text_12_B.MGB"
-                tools:text="Текущее задание" />
+                android:text="@string/current_task" />
         </LinearLayout>
 
         <LinearLayout
@@ -148,35 +148,42 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-        <TextView
-            style="@style/Text_12_B.BGC1"
+        <LinearLayout
+            android:id="@+id/details_block"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/base_s"
-            android:text="@string/offer_details" />
+            android:orientation="vertical">
+            <TextView
+                style="@style/Text_12_B.BGC1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/offer_details" />
 
-        <TextView
-            android:id="@+id/offer_details"
-            style="@style/Text_14_B.D"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/base_xxxs"
-            tools:text="Прописанные детали заказа" />
+            <TextView
+                android:id="@+id/offer_details"
+                style="@style/Text_14_B.D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_xxxs"
+                tools:text="Прописанные детали заказа" />
 
-        <TextView
-            style="@style/Text_12_B.BGC1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/base_s"
-            android:text="@string/payment_options" />
+            <TextView
+                style="@style/Text_12_B.BGC1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_s"
+                android:text="@string/payment_options" />
 
-        <TextView
-            android:id="@+id/payment_options"
-            style="@style/Text_14_B.D"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/base_xxxs"
-            tools:text="Прописанные параметры по оплате" />
+            <TextView
+                android:id="@+id/payment_options"
+                style="@style/Text_14_B.D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_xxxs"
+                tools:text="Прописанные параметры по оплате" />
+        </LinearLayout>
+
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_details"
@@ -198,6 +205,7 @@
             android:layout_marginTop="@dimen/base_s"
             android:backgroundTint="@color/light_gray_blue"
             android:visibility="gone"
+            tools:visibility="visible"
             app:cardCornerRadius="@dimen/corner_12">
 
 
@@ -215,7 +223,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:enabled="true"
-                    android:gravity="start|center_vertical"
                     android:textAppearance="@style/Text_14_R.Status"
                     tools:text="@string/status_done_title" />
 
@@ -225,7 +232,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginTop="@dimen/base_xxxs"
-                    android:gravity="end|center_vertical"
                     android:textAppearance="@style/Text_14_B.DG"
                     tools:text="@string/status_done_subtitle" />
             </LinearLayout>
